@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
-
     def hello
-        render text: "This is my first RoR app to deploy, so hi everyone."
+        render html: "This is my first app RoR to deploy in Heroku!"
     end
 end
