@@ -18,7 +18,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get about" do
-    get static_apges_about_url
+    get static_pages_about_url
     assert_response :success
     assert_select "title", "About | #{@base_title}"
   end
