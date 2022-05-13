@@ -1,4 +1,4 @@
-# Sample Application
+# Micropost Application
 
 ### Getting started
 
