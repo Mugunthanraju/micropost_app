@@ -30,6 +30,9 @@ gem 'net-smtp' # to send email
 gem 'net-imap' # for rspec
 gem 'net-pop'  # for rspec
 
+# To do integration test
+gem 'rails-controller-testing'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
   

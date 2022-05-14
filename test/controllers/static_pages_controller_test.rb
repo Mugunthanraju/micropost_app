@@ -2,7 +2,7 @@ require "test_helper"
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   def setup
-    @base_title = "Sample App"
+    @base_title = "Micropost"
   end
 
   test "should get home" do
