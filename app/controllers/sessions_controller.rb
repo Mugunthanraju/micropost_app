@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user&.authenticate(params[:session][:password])
       # Login the user and redirects to user's page.
+      params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       log_in user
       flash.now[:success] = "Welcome back #{user[:name]}"
       # redirect_to user_url(@user)
@@ -25,7 +26,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
   end
 
