@@ -5,6 +5,17 @@
 
 body {
     padding-top: 60px;
+    background-color: #1d1b2a;
+    color: #fff;
+}
+
+a {
+    color: rgb(255, 4, 213);
+}
+
+a:hover {
+    color: rgb(211, 181, 11);
+    text-decoration: none;
 }
 
 section {
@@ -47,7 +58,7 @@ h2 {
     margin-bottom: 30px;
     text-align: center;
     font-weight: normal;
-    color: #777;
+    color: rgb(161, 161, 161);
 }
 
 p {
@@ -78,15 +89,16 @@ footer {
     margin-top: 45px;
     padding-top: 5px;
     border-top: 1px solid #eaeaea;
-    color: #777;
+    color: rgb(161, 161, 161);
 }
 
 footer a {
-    color: #555;
+    color: rgb(161, 161, 161);
 }
 
 footer a:hover {
-    color: #222;
+    color: #fff;
+    text-decoration: none;
 }
 
 footer small {
@@ -228,4 +240,16 @@ input {
 #session_remember_me {
     width: auto;
     margin-left: 0;
+}
+
+/* Users index */
+.users {
+    list-style: none;
+    margin: 0;
+
+    li {
+        overflow: auto;
+        padding: 10px 0;
+        border-bottom: 1px solid $gray-lighter;
+    }
 }

@@ -7,11 +7,11 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user&.authenticate(params[:session][:password])
       # Login the user and redirects to user's page.
-      params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       log_in user
+      params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       flash.now[:success] = "Welcome back #{user[:name]}"
       # redirect_to user_url(@user)
-      redirect_to user
+      redirect_back_or user
     else
       # Create an error message
       if user
