@@ -22,9 +22,9 @@ class UsersController < ApplicationController
     @user = User.new(user_params) # Paramater comes form private method below.
     if @user.save
       # Handle a successful save.
-      log_in @user
-      flash.now[:success] = "Welcome to Micropost"
-      redirect_to user_url(@user)
+      @user.send_activation_email
+      flash.now[:info] = "Please check your email to activate your account."
+      redirect_to root_url
     else
       render 'new'
     end 
