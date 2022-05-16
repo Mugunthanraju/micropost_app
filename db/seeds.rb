@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Create a main sample user.
+User.create!(name: "Mugunthan", email: "mugunthan@email.com", password: "mugunthan", password_confirmation: "mugunthan", admin: true)
 User.create!(name: "Avenger", email: "avenger@email.com", password: "avenger", password_confirmation: "avenger", admin: true)
 
 # Generate a bunch of additional users. 
