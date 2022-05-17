@@ -19,3 +19,6 @@ If the test suite passes, you'll be ready to run the app in a local server:
 $ rails server
 ```
 
+### Screenshot of Home Page
+
+![Home Page](app/assets/images/app.png "Here is the root path image.")
