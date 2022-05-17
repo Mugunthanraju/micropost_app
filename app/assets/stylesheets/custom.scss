@@ -351,3 +351,35 @@ span.image {
         border: 0;
     }
 }
+
+// About
+
+h1.creator {
+    letter-spacing: -1px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: rgb(10, 226, 237);
+}
+
+h2.creator {
+    font-size: 2em;
+    letter-spacing: -1px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgb(255, 4, 213);
+}
+
+// Helper
+h1.helper {
+    letter-spacing: -1px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: rgb(255, 4, 213);
+}
+
+h2.helper {
+    letter-spacing: -1px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgb(10, 226, 237);
+}

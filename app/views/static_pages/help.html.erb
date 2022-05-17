@@ -3,7 +3,14 @@
 <%# <h1>StaticPages#help</h1>
 <p>Find me in app/views/static_pages/help.html.erb</p> %>
 
-<h1>Sample App - Help</h1>
-<p>
-    <a href="https://mp-gmr.herokuapp.com/">This is the Help page for the Sample Application</a>
-</p>
+<div style="background:transparent !important" class="center jumbotron">
+        <%# <h1>Welcome to Sample App</h1> %>
+        <h1 class="helper">HELP</h1>
+        <h2 class="helper">
+            If you find my any problem or issue, please get in touch with me by clicking below button.
+        </h2>
+        <%# <h2>
+            This is the Home page for the <a href="https://gentle-eyrie-11175.herokuapp.com/">Sample Application</a>.
+        </h2> %>
+        <%= link_to "Contact Me", 'https://www.linkedin.com/in/mugunthanraju/', class: "btn btn-lg btn-warning" %>
+    </div>
